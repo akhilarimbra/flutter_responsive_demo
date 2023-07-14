@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_framework/responsive_breakpoints.dart';
+import 'package:responsive_framework/responsive_framework.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -17,28 +17,28 @@ class _HomeScreenState extends State<HomeScreen> {
           ResponsiveBreakpoints.of(context).breakpoint.name ?? 'Undefined',
         ),
       ),
-      body: ListView(children: [
-        ListTile(
-          title: Text(
-            'Desktop : ${ResponsiveBreakpoints.of(context).isDesktop}',
-          ),
-        ),
-        ListTile(
-          title: Text(
-            'Mobile : ${ResponsiveBreakpoints.of(context).isMobile}',
-          ),
-        ),
-        ListTile(
-          title: Text(
-            'Phone : ${ResponsiveBreakpoints.of(context).isPhone}',
-          ),
-        ),
-        ListTile(
-          title: Text(
-            'Tablet : ${ResponsiveBreakpoints.of(context).isTablet}',
-          ),
-        )
-      ]),
+      // body: ListView(children: [
+      //   ListTile(
+      //     title: Text(
+      //       'Desktop : ${ResponsiveBreakpoints.of(context).isDesktop}',
+      //     ),
+      //   ),
+      //   ListTile(
+      //     title: Text(
+      //       'Mobile : ${ResponsiveBreakpoints.of(context).isMobile}',
+      //     ),
+      //   ),
+      //   ListTile(
+      //     title: Text(
+      //       'Phone : ${ResponsiveBreakpoints.of(context).isPhone}',
+      //     ),
+      //   ),
+      //   ListTile(
+      //     title: Text(
+      //       'Tablet : ${ResponsiveBreakpoints.of(context).isTablet}',
+      //     ),
+      //   )
+      // ]),
     );
   }
 }
